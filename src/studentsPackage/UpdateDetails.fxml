@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="712.0" styleClass="backgroundIm" stylesheets="@../NewFie.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentsPackage.UpdateDetails">
+   <children>
+      <Label layoutX="90.0" layoutY="17.0" prefHeight="36.0" prefWidth="177.0" text="EDIT STUDENT DETAILS" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="regno11" layoutX="193.0" layoutY="81.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="regno1" layoutX="19.0" layoutY="85.0" prefHeight="25.0" prefWidth="119.0" text="Reg_No" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstname11" layoutX="192.0" layoutY="122.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="firstname1" layoutX="16.0" layoutY="124.0" prefHeight="20.0" prefWidth="83.0" text="First_Name" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="middlename11" layoutX="193.0" layoutY="159.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="middlename1" layoutX="12.0" layoutY="163.0" prefHeight="20.0" prefWidth="104.0" text="Middle_Name" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastname11" layoutX="193.0" layoutY="194.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="lastname" layoutX="10.0" layoutY="198.0" prefHeight="20.0" prefWidth="77.0" text="Last_Name" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailaddress11" layoutX="193.0" layoutY="228.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="emailaddress1" layoutX="10.0" layoutY="232.0" prefHeight="20.0" prefWidth="98.0" text="Email_Address" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneno11" layoutX="193.0" layoutY="265.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="phoneno1" layoutX="11.0" layoutY="269.0" prefHeight="20.0" prefWidth="83.0" text="Phone_No" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gender1" layoutX="10.0" layoutY="309.0" prefHeight="20.0" prefWidth="77.0" text="Gender" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="gender11" layoutX="192.0" layoutY="306.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="course11" layoutX="193.0" layoutY="347.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="course1" layoutX="8.0" layoutY="347.0" prefHeight="20.0" prefWidth="70.0" text="Course" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="department11" layoutX="193.0" layoutY="386.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="department1" layoutX="6.0" layoutY="390.0" prefHeight="20.0" prefWidth="98.0" text="Department" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="faculty11" layoutX="192.0" layoutY="430.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="yearofstudy11" layoutX="193.0" layoutY="475.0" prefHeight="25.0" prefWidth="240.0" />
+      <Label fx:id="faculty1" layoutX="8.0" layoutY="434.0" prefHeight="20.0" prefWidth="98.0" text="Faculty" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="yearofstudy1" layoutX="9.0" layoutY="479.0" prefHeight="20.0" prefWidth="92.0" text="Year_of_Study" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonback" layoutX="23.0" layoutY="523.0" mnemonicParsing="false" onAction="#buttonbackscene" text="Back" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="update" layoutX="193.0" layoutY="523.0" mnemonicParsing="false" onAction="#updatescene" text="Update" textFill="#1cc3bd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

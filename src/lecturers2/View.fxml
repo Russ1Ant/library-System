@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="394.0" prefWidth="957.0" styleClass="backgroundIm" stylesheets="@../NewFie.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lecturers2.ViewController">
+    <children>
+        <TableView fx:id="tableview" layoutX="9.0" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="2.0">
+            <columns>
+                <TableColumn fx:id="columnLecID" prefWidth="97.0" text="Lecturer_ID" />
+            <TableColumn fx:id="columnNationalID" prefWidth="102.0" text="National_ID" />
+                <TableColumn fx:id="columnfirstname" prefWidth="101.0" text="First_Name" />
+                <TableColumn fx:id="columnmiddlename" minWidth="0.0" prefWidth="75.0" text="Middle_Name" />
+                <TableColumn fx:id="columnlastname" minWidth="0.0" prefWidth="75.0" text="Last_Name" />
+                <TableColumn fx:id="columnemailaddress" minWidth="0.0" prefWidth="75.0" text="Email_Address" />
+                <TableColumn fx:id="columnphoneno" minWidth="0.0" prefWidth="75.0" text="Phone_No" />
+                <TableColumn fx:id="columngender" minWidth="0.0" prefWidth="75.0" text="Gender" />
+                <TableColumn fx:id="columndepartment" minWidth="0.0" prefWidth="75.0" text="Department" />
+                <TableColumn fx:id="columnfaculty" minWidth="0.0" prefWidth="75.0" text="Faculty" />
+                <TableColumn fx:id="columnbalance" minWidth="0.0" prefWidth="75.0" text="Balance" />
+                <TableColumn fx:id="columnWorkingStatus" minWidth="0.0" prefWidth="63.0" text="Working_Status" />
+            </columns>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#deleteselectedlecturer" text="delete" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateselectedlecturer" text="update" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </TableView>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+        <ButtonBar layoutY="-14.0" prefHeight="54.0" prefWidth="234.0" />
+        <AnchorPane layoutX="-14.0" layoutY="185.0" prefHeight="108.0" prefWidth="634.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0">
+            <children>
+                <Button fx:id="addNewLecturer" layoutX="479.0" layoutY="15.0" mnemonicParsing="false" onAction="#addNewLecturerScene" text="Add New Lecturer">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="viewDeletedStudents" layoutX="636.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewdeletedlecturersscene" prefHeight="40.0" prefWidth="157.0" text="View Deleted Lecturer">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="searchLecturer" layoutX="295.0" layoutY="64.0" mnemonicParsing="false" onAction="#searchLecturer" prefHeight="25.0" prefWidth="116.0" text="Search Lecturer">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Button>
+                <TextField fx:id="searchTextField" layoutX="236.0" layoutY="15.0" promptText="Enter Lecturer ID">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+            <Button layoutX="24.0" layoutY="79.0" mnemonicParsing="false" onAction="#back" text="back" />
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </AnchorPane>
+    </children>
+</AnchorPane>

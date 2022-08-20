@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="674.0" styleClass="backgroundIm" stylesheets="@../NewFie.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddStaffController">
+   <bottom>
+      <HBox prefHeight="11.0" prefWidth="569.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="back">
+               <HBox.margin>
+                  <Insets left="20.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#addNewStaff" text="submit">
+               <HBox.margin>
+                  <Insets left="200.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="462.0" prefWidth="432.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="idtxt" promptText="staff id" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="natIdtxt" layoutY="25.0" promptText="National id" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="firstName" layoutY="57.0" promptText="First Name" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="middkeName" layoutY="88.0" promptText="Middle name" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="lastName" layoutY="123.0" promptText="Last Name" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="email" layoutY="165.0" promptText="email" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="phonetxt" layoutY="200.0" promptText="phone Number" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="facultyTxt" layoutY="237.0" promptText="Faculty" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="balanceTxt" layoutY="277.0" promptText="balance" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="passwordTxt" layoutY="319.0" promptText="password" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></TextField>
+            <ComboBox fx:id="roleComboBox" layoutX="6.0" layoutY="359.0" prefWidth="150.0" promptText="Department" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></ComboBox>
+            <ComboBox fx:id="genderComboBox" layoutX="6.0" layoutY="399.0" prefWidth="150.0" promptText="Gender" AnchorPane.leftAnchor="200.0">
+               <padding>
+                  <Insets left="30.0" top="10.0" />
+               </padding></ComboBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

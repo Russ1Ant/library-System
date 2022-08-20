@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="614.0" styleClass="backgroundImg" stylesheets="@NewFie.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpkg.MainController">
+   <children>
+      <ComboBox fx:id="loginCombo" layoutX="424.0" layoutY="40.0" onAction="#comboSelectionM" prefWidth="150.0" promptText="Login" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="314.0" prefWidth="634.0" styleClass="students" stylesheets="@../NewFie.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentsPackage2.ViewController">
+   <children>
+      <TableView fx:id="tableview" layoutX="9.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="columnregno" prefWidth="75.0" text="Reg_No" />
+          <TableColumn fx:id="columnfirstname" prefWidth="75.0" text="First_Name" />
+            <TableColumn fx:id="columnmiddlename" prefWidth="75.0" text="Middle_Name" />
+            <TableColumn fx:id="columnlastname" prefWidth="75.0" text="Last_Name" />
+            <TableColumn fx:id="columnemailaddress" prefWidth="75.0" text="Email_Address" />
+            <TableColumn fx:id="columnphoneno" prefWidth="75.0" text="Phone_No" />
+            <TableColumn fx:id="columngender" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="columncourse" prefWidth="75.0" text="Course" />
+            <TableColumn fx:id="columndepartment" prefWidth="75.0" text="Department" />
+            <TableColumn fx:id="columnfaculty" prefWidth="75.0" text="Faculty" />
+            <TableColumn fx:id="columnyearofstudy" prefWidth="75.0" text="Year_of_Study" />
+            <TableColumn fx:id="columnbalance" prefWidth="75.0" text="Balance" />
+            <TableColumn fx:id="columnstudentstatus" prefWidth="75.0" text="Student_Status" />
+        </columns>
+          <contextMenu>
+              <ContextMenu>
+                  <items>
+                      <MenuItem mnemonicParsing="false" onAction="#deleteselectedstudent" text="delete" />
+                      <MenuItem mnemonicParsing="false" onAction="#updateselectedstudent" text="update" />
+                  </items>
+              </ContextMenu>
+          </contextMenu>
+
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </TableView>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+      <AnchorPane layoutX="-14.0" layoutY="185.0" prefHeight="108.0" prefWidth="634.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+          <Button fx:id="addnewstudent1" layoutX="268.0" layoutY="20.0" mnemonicParsing="false" onAction="#addnewstudentscene1" text="Add new student">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewdeletedstudents" layoutX="458.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewdeletedstudentsscene" prefHeight="40.0" prefWidth="157.0" text="View deleted students">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchstudent" layoutX="130.0" layoutY="64.0" mnemonicParsing="false" onAction="#searchStudent" prefHeight="25.0" prefWidth="116.0" text="Search Student">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <TextField fx:id="searchTextField" layoutX="71.0" layoutY="15.0" promptText="Enter Reg_No">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="19.0" layoutY="67.0" mnemonicParsing="false" onAction="#backToDash" text="Back" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.backgroundIm{
+	-fx-background-image: url("/images/lib4.jpg");
+	-fx-background-size: 100% 100%;
+	
+}
+.books{
+	-fx-background-image: url("/images/book2.jpg");
+	-fx-background-size: 100% 100%;	
+
+}
+.students{
+	-fx-background-image: url("/images/student2.jpg");
+	-fx-background-size: 100% 100%;	
+}
+.lecturers{
+	-fx-background-image: url("/images/lecturer2.jpg");
+	-fx-background-size: 100% 100%;	
+}
+
+.staff{
+	-fx-background-image: url("/images/librarianImage.jpg");
+	-fx-background-size: 100% 100%;	
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" styleClass="backgroundIm" stylesheets="@../../NewFie.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book.returnB.ReturnBookController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="172.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="428.0" minWidth="10.0" prefWidth="428.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Book Isbn">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label text="Student ID" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="isbn" GridPane.columnIndex="1" />
+            <TextField fx:id="studentId" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#returnBook1" text="Return Book" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#goBack" text="Back" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </bottom>
+</BorderPane>
